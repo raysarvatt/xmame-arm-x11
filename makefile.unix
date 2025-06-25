@@ -193,7 +193,7 @@ ifneq (,$(findstring gcc,$(CC)))
   # CFLAGS += -Wdeclaration-after-statement
 
   # Don't warn about code that might break strict aliasing rules. 
-  # CFLAGS += -Wno-strict-aliasing
+   CFLAGS += -Wno-strict-aliasing
 
 
   #########################################################################
@@ -576,7 +576,7 @@ SYSCONFDIR = $(XMAMEROOT)
 ###########################################################################
 
 # i386, GNU asm
-MY_CPU = arm
+# MY_CPU = arm
 
 # i386, no asm -- needed for the Intel C++ compiler, which does not fully
 # understand GCC's inline assembly syntax, though you may still enable 
@@ -588,7 +588,7 @@ MY_CPU = arm
 # MY_CPU = ia64
 
 # Opteron/Athlon64
-# MY_CPU = amd64
+ MY_CPU = amd64
 
 # Intel EM64T
 # MY_CPU = em64t
@@ -670,7 +670,7 @@ ARCH  = linux
 
 # Enable the standard joystick driver, which should work in Linux, OpenBSD, 
 # NetBSD, and FreeBSD.
-# JOY_STANDARD = 1
+ JOY_STANDARD = 1
 
 # Linux FM-TOWNS game pad joystick emulation support.  Thanks to Osamu 
 # Kurati.
@@ -712,10 +712,10 @@ ARCH  = linux
 # Choose any additonal sound drivers you want to include, besides the 
 # native sound driver for your system.
 # SOUND_ESOUND = 1
-# SOUND_ALSA = 1
+ SOUND_ALSA = 1
 # SOUND_ARTS_TEIRA = 1
 # SOUND_ARTS_SMOTEK = 1
-# SOUND_SDL = 1
+ SOUND_SDL = 1
 # SOUND_WAVEOUT = 1
 
 
