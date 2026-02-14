@@ -336,11 +336,11 @@ static void *alsa_dsp_create(const void *flags)
 	dsp->hw_info.samplerate = rate;
 	dsp->hw_info.bufsize = 0;
 
-	fprintf(stderr_file, "info: set to %dbit linear %s %dHz\n",
+/*	fprintf(stderr_file, "info: set to %dbit linear %s %dHz\n",
 		(dsp->hw_info.type & SYSDEP_DSP_16BIT) ? 16 : 8,
 		(dsp->hw_info.type & SYSDEP_DSP_STEREO) ? "stereo" : "mono",
 		dsp->hw_info.samplerate);
-
+*/
 	return dsp;
 }
 
